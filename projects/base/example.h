@@ -2,6 +2,8 @@
 
 #include "app.h"
 #include "grid.h"
+#include "SaveLoad.h"
+#include "SpriteAnimator.h"
 class Example : public App
 {
 public:

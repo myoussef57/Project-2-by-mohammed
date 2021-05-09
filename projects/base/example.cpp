@@ -25,7 +25,9 @@ bool Example::start()
 	redbrickTexture = kage::TextureManager::getTexture("data/RedBrick.jpg");
 	bluebrickTexture = kage::TextureManager::getTexture("data/BlueBrick.jpg");
 	blackbrickTexture = kage::TextureManager::getTexture("data/BlackBrick.jpg");
-	
+	//Grid.tiles[i].setPosition(sf::Vector2f(
+		//Grid_Offset_X + x * Vertical_X_Spacing,
+		//Grid_Offset_Y + y * Horizontal_Y_Spacing));
 	return true;
 }
 
@@ -96,9 +98,7 @@ void Example::update(float deltaT)
 			Grid.tiles[i].setTexture(*blackbrickTexture);
 			Grid.map[i] = 4;
 		}
-		//Grid.tiles[i].setPosition(sf::Vector2f(
-		//Grid_Offset_X + x * Vertical_X_Spacing,
-			//Grid_Offset_Y + y * Horizontal_Y_Spacing));
+		
 	}
 
 }
