@@ -63,6 +63,14 @@ void Example::update(float deltaT)
 		Grid.ChosenTileID = 4;
 		
 	}
+	if (ImGui::Button("Save"))
+	{
+		SaveLoad::Save("map.txt" ,map,5,4);
+	}
+	if (ImGui::Button("load"))
+	{
+		SaveLoad::load("map.txt" , map,20);
+	}
 
 	ImGui::End();
 
@@ -98,7 +106,7 @@ void Example::update(float deltaT)
 			Grid.tiles[i].setTexture(*blackbrickTexture);
 			Grid.map[i] = 4;
 		}
-		
+		SpriteAnimator.Update();
 	}
 
 }

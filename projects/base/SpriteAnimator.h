@@ -4,7 +4,7 @@
 class Animator
 {
 private:
-	sf::Texture*::spriteSheet;
+	sf::Texture *spriteSheet;
 public:
 	Animator();
 	~Animator();

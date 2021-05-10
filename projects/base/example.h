@@ -23,4 +23,5 @@ public:
 	sf::Texture *blackbrickTexture;
 	
 	grid Grid;
+	Animator SpriteAnimator;
 };
